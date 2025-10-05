@@ -1,0 +1,631 @@
+/*----------Connecting directives----------*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('_variables.css');
+/*----------End of connecting directives----------*/
+
+/*----------General styles----------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    background-color: var(--light-bg-color);;
+}
+
+h1 {
+    font-size: 46px;
+    line-height: 55px;
+    font-weight: 400;
+    color: var(--dark-heading-color);
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-text-color);
+}
+
+a {
+    font-size: 12px;
+    color: var(--dark-text-color);
+    text-decoration: none;
+}
+
+.section {
+    min-height: 100dvh;
+    padding: 50px 0;
+}
+
+.button {
+    display: inline-block;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 0 20px;
+    line-height: 40px;
+    border-radius: 12px;
+}
+
+.dark-button {
+    background-color: var(--dark-button-bg);
+    color: var(--dark-button-color);
+}
+
+.light-button {
+    background-color: var(--light-button-bg-color);
+    color: var(--light-button-color);
+    border: 1px solid var(--border-color);
+    margin-left: 10px;
+}
+
+.subtext {
+    font-size: 14px;
+}
+
+.light-tile {
+    background-color: var(--light-tile-bg-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+}
+
+.dark-tile {
+    background-color: var(--dark-tile-bg-color);
+    border: 1px solid var(--dark-border-color);
+    border-radius: 16px;
+    padding: 30px;
+}
+/*----------General styles----------*/
+
+/*----------Styles for header-section----------*/
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.header-section .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    background-color: var(--light-tile-bg-color);
+    transform: translateX(-50%);
+    height: 56px;
+    width: 660px;
+    border-radius: 16px;
+    border: 1px solid #00000020;
+    padding: 0 10px;
+    z-index: 1;
+}
+
+.header-section .navBar ul {
+    display: flex;
+    column-gap: 40px;
+}
+
+.header-section .navBar ul li {
+    display: inline-block;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.header-section .navBar .donate-button {
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0px 10px;
+}
+
+.header-section .hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.header-section .hero-section .hero-content {
+    width: calc(40% - 10px);
+}
+
+.header-section .hero-section .container {
+    width: calc(40% - 10px);
+}
+
+.header-section .hero-section .introductory-photo {
+    width: 100%;
+}
+
+.header-section .hero-section .buttons {
+    margin-top: 10px;
+}
+
+.hero-section .buttons:last-child {
+    margin-top: 100px;
+}
+/*----------End of styles for header-section----------*/
+
+/*----------Styles for section-1----------*/
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-bg-color);
+}
+
+.section-1 .link {
+    background-color: var(--light-button-bg-color);
+    border: 1px solid #E8E8E8;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.section-1 h2 {
+    text-align: center;
+    font-size: 42.38px;
+    line-height: 57.6px;
+    margin-bottom: 50px;
+}
+
+.section-1 .wrapper {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    width: 80%;
+}
+
+.section-1 .light-tile {
+    width: calc(100% / 3 - 40px / 3);
+    box-shadow: 0 40px 0 -1px #F1F1F1,
+                0 40px var(--border-color);
+}
+
+.section-1 article > * {
+    margin-bottom: 20px;
+}
+
+.section-1 article img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.section-1 article h3 {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.section-1 article p {
+    font-size: 16px;
+    line-height: 24px;
+}
+/*----------End of styles for section-1----------*/
+
+/*----------Styles for section-wrapper----------*/
+.section-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 95%;
+    background-color: var(--dark-bg-color);
+    border-radius: 0 24px 24px 24px;
+    margin: 300px auto 0;
+}
+
+.section-wrapper:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -80px;
+    left: 0;
+    height: 80px;
+    width: 70%;
+    background-color: var(--dark-bg-color);
+    border-radius: 24px 24px 0 0;
+    box-shadow: 24px 24px 0 0 var(--dark-bg-color);
+}
+
+.section-wrapper:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    height: 80px;
+    width: 30%;
+    background-color: var(--light-bg-color);
+    border-radius: 0 0 0 24px;
+}
+
+.section-wrapper section {
+    width: calc(100% * 80 / 95);
+}
+
+.section-wrapper .link {
+    font-size: 14px;
+    color: #D8D8D8;
+    border: 1px solid #484848;
+    border-radius: 100px;
+    padding: 5px 10px;
+}
+
+.logo {
+    display: inline-block;
+    background-image: url(../images/logo.svg);
+    height: 14px;
+    width: 14px;
+}
+
+.section-wrapper h2 {
+    font-size: 48px;
+    line-height: 64px;
+    color: var(--light-heading-color);
+    margin-top: 20px;
+}
+
+.section-wrapper p {
+    color: var(--medium-light-text-color);
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.section-wrapper .section > :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.section-wrapper .section > *:nth-child(4) {
+    margin-bottom: 50px;
+}
+
+.section-wrapper .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-wrapper article h3 {
+    font-size: 20px;
+    line-height: 22px;
+    color: var(--light-heading-color);
+}
+
+.section-wrapper article p {
+    color: var(--light-text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/*----------Styles for section-2----------*/
+.section-wrapper .section-2 .wrapper article {
+    text-align: center;
+}
+
+.section-wrapper .section-2 .wrapper article img {
+    display: inline-block;
+    width: 80%;
+}
+
+.section-wrapper .section-2 .wrapper article:nth-child(3) img {
+    position: relative;
+    right: -30px;
+    width: 100%;
+}
+
+.section-wrapper .section-2 article h3 {
+    margin: 50px 0 20px;
+    padding: 0 7%;
+}
+
+.section-wrapper .section-2 article p {
+    padding: 0 7%;
+}
+
+.section-wrapper .section-2 .wrapper article:first-child,
+.section-wrapper .section-2 .wrapper article:last-child {
+    width: calc(55% - 10px);
+}
+
+.section-wrapper .section-2 .wrapper article:nth-child(2),
+.section-wrapper .section-2 .wrapper article:nth-child(3) {
+    width: calc(45% - 10px);
+}
+/*----------End of styles for section-2----------*/
+
+/*----------Styles for section-3----------*/
+.section-wrapper .section-3 .wrapper article {
+    text-align: center;
+    width: calc(100% / 3 - 40px / 3);
+}
+
+.section-wrapper .section-3 article h3 {
+    text-align: left;
+}
+
+.section-wrapper .section-3 article p {
+    margin: 20px 0 50px;
+    text-align: left;
+}
+
+.section-wrapper .section-3 .wrapper article img {
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+}
+/*----------End of styles for section-3----------*/
+
+/*----------Styles for section-4----------*/
+.section-wrapper .section-4 .wrapper article {
+    width: calc(100% / 4 - 60px / 4);
+}
+
+.section-wrapper .section-4 article h3 {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.section-wrapper .section-4 .pattern {
+    height: 60px;
+    width: 60px;
+}
+
+.section-wrapper .section-4 .pattern-1 {
+    background-image: url(../images/pattern_1.svg);
+}
+
+.section-wrapper .section-4 .pattern-2 {
+    background-image: url(../images/pattern_2.svg);
+}
+
+.section-wrapper .section-4 .pattern-3 {
+    background-image: url(../images/pattern_3.svg);
+}
+
+.section-wrapper .section-4 .pattern-4 {
+    background-image: url(../images/pattern_4.svg);
+}
+/*----------End of styles for section-4----------*/
+/*----------Enf of styles for section-wrapper----------*/
+
+/*----------Styles for section-5----------*/
+.section-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.section-5 .tabs {
+    background-color: #E7E7E7;
+    border-radius: 8px;
+}
+
+.section-5 .tabs .tab {
+    float: left;
+    height: 44px;
+    line-height: 20px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #8D8D8D;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.section-5 .tabs .open-tab {
+    background-color: var(--light-tile-bg-color);
+    color: var(--dark-heading-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.section-5 h2 {
+    font-size: 42px;
+    line-height: 58px;
+}
+
+.section-5 .wrapper {
+    display: flex;
+    width: 80%;
+    gap: 20px;
+}
+
+.section-5 .wrapper .light-tile {
+    border: 1px solid #E7E7E7;
+    border-radius: 12px;
+}
+
+.section-5 .wrapper article > :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.check-mark {
+    height: 32px;
+    width: 32px;
+    background-color: #C0DBC7;
+    color: #2E5235;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.section-5 h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-heading-color);
+}
+/*----------End of styles for section-5----------*/
+
+/*----------Styles for section-6----------*/
+.section-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    row-gap: 30px;
+}
+
+.section-6 h2 {
+    font-size: 42px;
+    line-height: 48px;
+}
+
+.section-6 .wrapper {
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section-6 .wrapper article {
+    width: 50%;
+    background-color: var(--light-tile-bg-color);
+    padding: 40px;
+}
+
+.section-6 .wrapper article > :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.section-6 .wrapper article:first-child {
+    width: 50%;
+    border-right: 1px solid var(--border-color);
+}
+/*----------End of styles for section-6----------*/
+
+/*----------Styles for footer----------*/
+.website-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1E1E1E;
+    border-radius: 24px 24px 0 0;
+    padding: 5% 10% 40px;
+}
+
+.website-footer > .dark-tile {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+    background-image: url(../images/bg_for_dark_tile.svg);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 60px 30px;
+}
+
+.website-footer .dark-tile h2 {
+    width: 100%;
+    font-size: 42px;
+    font-weight: 400;
+    color: var(--light-heading-color);
+}
+
+.website-footer .wrap {
+    display: flex;
+    border-bottom: 1px solid var(--dark-border-color);
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+}
+
+.website-footer .soc-links {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.website-footer .soc-links li {
+    display: inline-block;
+}
+
+.website-footer .soc-link {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background-color: #303030;
+    border: 1px solid #606060;
+    border-radius: 8px;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+}
+
+.website-footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.website-footer .wrap form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 50%;
+}
+
+.website-footer .wrap label {
+    font-size: 14px;
+    line-height: 16.8px;
+    color: var(--light-text-color);
+}
+
+.website-footer .wrap form input[type="text"] {
+    height: 42px;
+    width: calc(40% - 40px / 3);
+    border-radius: 9px;
+    background-color: var(--dark-bg-color);
+    border: 1px solid var(--dark-border-color);
+    color: #757575;
+    padding: 0 10px;
+}
+
+.website-footer .wrap form input[type="submit"] {
+    height: 42px;
+    width: calc(20% - 40px / 3);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.website-footer .lower-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.website-footer .lower-footer div {
+    display: flex;
+    gap: 20px;
+}
+
+.website-footer .lower-footer p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.website-footer .lower-footer a {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--light-text-color);
+}
+/*----------End of styles for footer----------*/
